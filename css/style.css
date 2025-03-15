@@ -1,0 +1,25 @@
+
+:root{
+    --primaria-1: #4178BF;
+    --primaria-2: #4988BF;
+    --primaria-3: #7B92A6;
+    --primaria-4: #F2F2F2;
+    --primaria-5: #F22738;
+    --secundaria-2: #0077ff;
+    --secundaria-3: #0077ff;
+    --secundaria-4: #0077ff;
+    --branca: white;
+    --preto: black;
+}
+
+body{
+    background: var(--preto);
+    font-family: sans-serif;
+}
+.main{
+    margin: 5px;
+}
+.banner img{
+    width: 100%;
+    border-radius: 20px;
+}

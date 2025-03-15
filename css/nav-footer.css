@@ -1,0 +1,61 @@
+header, header .logo-branca-transp a, header nav ul{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+header .logo-branca-transp img{
+    width: 100px;
+}
+header{
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: var(--primaria-1);
+    padding: 10px;
+}
+header nav ul li{
+    margin-left: 20px;
+    list-style: none;
+    color: var(--branca);
+    transition: 300ms ease-in-out;
+}
+header nav ul li:hover{
+    color: var(--primaria-2);
+}
+header nav ul a, header .logo-branca-transp a{
+    text-decoration: none;
+}
+header .logo-branca-transp a{
+    color: var(--branca)
+}
+header nav ul li .search input[type="search"]{
+    padding: 7px 5px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+header nav ul li .search input[type="search"]:hover{
+    padding: 7px 5px;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: 300ms ease-in-out;
+    color: var(--primaria-3);
+}
+header nav ul li .search input[type="submit"]:hover, header nav ul li input[type="button"]:hover{
+    padding: 7px 5px;
+    border-radius: 5px;
+    background: var(--primaria-3);
+    color: var(--branca);
+    transition: 300ms ease-in-out;
+    border: 1px solid transparent;
+}
+header nav ul li .search input[type="search"]:hover, header nav ul li input[type="button"]:hover{
+    padding: 7px 5px;
+    border-radius: 5px;
+    background: var(--primaria-3);
+    transition: 300ms ease-in-out;
+    border: 1px solid transparent;
+}
+
