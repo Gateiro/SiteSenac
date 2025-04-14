@@ -1,0 +1,77 @@
+/* Arquivo: css/nav-header.css */
+
+/* Estilo geral do cabeçalho e elementos relacionados */
+header, header .logo-branca-transp a, header nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Estilo para o logo no cabeçalho */
+header .logo-branca-transp img {
+    width: 130px;
+}
+
+/* Estilo geral do cabeçalho */
+header {
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: var(--primaria-1);
+    padding: 5px 50px;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+    padding: 0 15px;
+    align-items: center;
+}
+
+/* Estilo para os itens da lista de navegação */
+header nav ul li a{
+    margin: 20px;
+    color: var(--primaria-3);
+    transition: 300ms ease-in-out;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Efeito hover nos itens da lista */
+header nav ul li:hover {
+    color: var(--branca);
+    font-weight: bold;
+    font-size: 19px;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.75);
+    transition: color 300ms ease-in-out, text-shadow 300ms ease-in-out, text-weight 300ms ease-in-out;
+}
+
+
+/* Estilo para links no cabeçalho */
+header nav ul a, header .logo-branca-transp a {
+    text-decoration: none;
+}
+
+/* Cor do texto do link do logo */
+header .logo-branca-transp a {
+    color: var(--branca);
+}
+
+/* Estilo para botões no cabeçalho */
+header nav ul li button.button{
+    background: var(--primaria-4);
+    color: var(--branca);
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Estilo para campos de busca e botões no cabeçalho */
+header nav ul li .button:hover {
+    background: var(--primaria-4);
+    color: var(--branca);
+    border: 1px solid transparent;
+    font-weight: bold;
+    transition: background 300ms ease-in-out, color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    box-shadow: 0 0 5px var(--branca-2);
+}

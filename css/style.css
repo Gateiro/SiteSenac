@@ -1,25 +1,69 @@
+/* Arquivo: css/style.css */
 
-:root{
-    --primaria-1: #4178BF;
-    --primaria-2: #4988BF;
-    --primaria-3: #7B92A6;
-    --primaria-4: #F2F2F2;
-    --primaria-5: #F22738;
-    --secundaria-2: #0077ff;
-    --secundaria-3: #0077ff;
-    --secundaria-4: #0077ff;
-    --branca: white;
-    --preto: black;
+/* Definição de variáveis globais para cores */
+:root {
+    --primaria-1: rgba(0, 51, 102, 1);
+    --primaria-2: rgba(50, 109, 168, 1);
+    --primaria-3: rgba(212, 234, 255, 1);
+    --primaria-4: rgba(242, 39, 56, 1);
+    --branca: rgba(255, 255, 255, 1);
+    --branca-2: rgba(255, 255, 255, 0.5);
+    --preto: rgba(0, 0, 0, 1);
 }
 
-body{
-    background: var(--preto);
-    font-family: sans-serif;
+
+/* Estilo global do corpo */
+body {
+    background: var(--primaria-1); /* Fundo azul escuro */
+    font-family: sans-serif;      /* Fonte padrão */
 }
-.main{
+
+/* Margem padrão para a classe principal */
+.main {
     margin: 5px;
 }
-.banner img{
+
+/* Estilo para imagens no banner */
+.bannerCarrossel img {
+    width: 100%;              /* Largura total */
+    border-radius: 20px;      /* Bordas arredondadas */
+}
+
+/* CSS */
+.carrossel {
+    position: relative;
     width: 100%;
+    overflow: hidden;
     border-radius: 20px;
+}
+
+.bannerCarrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    height: auto;
+}
+
+.buttonCarrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.buttonCarrossel.prev {
+    left: 10px;
+}
+
+.buttonCarrossel.next {
+    right: 10px;
 }

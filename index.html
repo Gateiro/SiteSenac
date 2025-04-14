@@ -5,43 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="src/logo-branca-transp.png"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/nav-footer.css"/>
+    <link rel="stylesheet" href="css/nav-header.css"/>
     <title>Waytech</title>
 </head>
 <body>
     <header>
+        <!-- Logo com link para a página inicial -->
         <span class="logo-branca-transp">
             <a href="index.html">
-                <img src="src/logo-branca-transp.png" alt="logo waytech">
-                <h2>Waytech</h2>
+                <img src="src/logo-branca-transp.png" alt="Logo da Waytech">
             </a>
         </span>
+        <!-- Menu de navegação -->
         <nav>
             <ul>
-                <a href="#"><li>Home</li></a>
-                <a href="#"><li>Produtos</li></a>
-                <a href="#"><li>Sobre nós</li></a>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Sobre nós</a></li>
                 <li>
-                    <form class="search">
-                        <input type="search" placeholder="Procure nossos produtos..." required>
-                        <input type="submit" value="Pesquisar">
-                    </form>
-                </li>
-                <li>
-                    <a href="#">
-                        <input type="button" value="Fale Conosco">
-                    </a>
+                    <button class="button" aria-label="Fale Conosco">Fale Conosco</button>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="main">
-        <div class="container-1">
-            <div class="banner">
-                <img src="src/banner.png" alt="">
-            </div>
-        </div>
+    <main class="main">
+        <section class="container-1">
 
-    </div>
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="carrossel">
+                <div class="bannerCarrossel">
+                    <img src="src/banner1.png" alt="Banner 1" class="carousel-item">
+                    <img src="src/banner2.png" alt="Banner 2" class="carousel-item">
+                    <img src="src/banner3.png" alt="Banner 3" class="carousel-item">
+                </div>
+                <button class="buttonCarrossel prev" aria-label="Anterior">&#10094;</button>
+                <button class="buttonCarrossel next" aria-label="Próximo">&#10095;</button>
+            </div>
+        </section>
+    </main>
 </body>
+<script src="script/app.js" defer></script>
 </html>
