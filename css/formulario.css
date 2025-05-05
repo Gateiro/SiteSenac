@@ -1,0 +1,18 @@
+/* Definição de variáveis globais para cores */
+:root {
+    --primaria-1: rgba(0, 51, 102, 1);
+    --primaria-2: rgba(50, 109, 168, 1);
+    --primaria-3: rgba(212, 234, 255, 1);
+    --primaria-4: rgba(242, 39, 56, 1);
+    --branca: rgba(255, 255, 255, 1);
+    --branca-2: rgba(255, 255, 255, 0.5);
+    --preto: rgba(0, 0, 0, 1);
+}
+
+
+/* Estilo global do corpo */
+body {
+    background: var(--primaria-1); /* Fundo azul escuro */
+    font-family: sans-serif;      /* Fonte padrão */
+}
+
