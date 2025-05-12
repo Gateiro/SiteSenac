@@ -9,10 +9,66 @@
     --preto: rgba(0, 0, 0, 1);
 }
 
-
 /* Estilo global do corpo */
 body {
-    background: var(--primaria-1); /* Fundo azul escuro */
-    font-family: sans-serif;      /* Fonte padrão */
+    background: var(--primaria-1);
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-1{
+    flex-direction: column;
+    display: flex;
+    background-color: var(--branca);
+    border-radius: 10px;
+    padding: 20px 30px;
+    align-items: stretch;
+    width: 40%;
+    margin-right: auto;
+    margin-left: 50px;
+}
+.title-group{
+    display: flex;
+    flex-direction: column;
+    color: var(--primaria-1);
+    
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+    padding: 10px 0px;
+    color: var(--primaria-1);
+    align-items: left;
+    margin: 0 auto;
+}
+.form-group input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primaria-1);
+    background-color: var(--branca-2);
+    color: var(--preto);
+    box-sizing: border-box;
+}
+.form-group textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--primaria-1);
+    background-color: var(--branca-2);
+    color: var(--preto);
+    box-sizing: border-box;
+}
+
+.mapa iframe {
+    border-radius: 10px;
+    border: none;
+    margin-right: 50px;
 }
 

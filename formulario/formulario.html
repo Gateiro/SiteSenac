@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../src/logo-branca-transp.png"/>
-    <link rel="stylesheet" href="../css/formulario.css"/>
-    <link rel="stylesheet" href="../css/nav-header.css"/>
+    <link rel="icon" href="../src/logo-branca-transp.png" />
+    <link rel="stylesheet" href="../css/formulario.css" />
+    <link rel="stylesheet" href="../css/nav-header.css" />
     <title>Waytech</title>
 </head>
+
 <body>
     <header>
         <!-- Logo com link para a página inicial -->
@@ -28,45 +30,56 @@
             </ul>
         </nav>
     </header>
-    <div class="container-1">
-        <div>
-            <h1 class="title">Contate-nos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempore nobis temporibus, enim repellat eveniet odio ullam. Nesciunt dolor nam obcaecati quis amet debitis, incidunt exercitationem quibusdam nisi, assumenda eum!</p>
-            
-        </div>
-        <div>
+    <div class="container">
+        <div class="container-1">
+            <h1 class="title-group">Contate-nos</h1>
+            <p class="title-group">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempore nobis temporibus,
+                enim repellat eveniet odio ullam. Nesciunt dolor nam obcaecati quis amet debitis, incidunt
+                exercitationem quibusdam nisi, assumenda eum!</p>
             <form id="form-contato" class="form-waytech" method="post" aria-label="Formulário de Contato">
                 <!--Melhor organização e estilização dos campos através de DIVS-->
                 <!--Nome-->
                 <div class="form-group">
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required aria-required="true" placeholder="Ex.: Nome Sobrenome" minlength="3">
+                    <input type="text" id="nome" name="nome" required aria-required="true"
+                        placeholder="Ex.: Nome Sobrenome" minlength="3">
+                </div>
+                <!--Empresa-->
+                <div class="form-group">
+                    <label for="nome">Empresa</label>
+                    <input type="text" id="empresa" name="empresa" aria-required="true"
+                        placeholder="Ex.: Sua empresa ou onde trabalha" minlength="3">
                 </div>
                 <!--Email-->
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required aria-required="true" placeholder="Ex.: seu@email.com.br">
+                    <input type="email" id="email" name="email" required aria-required="true"
+                        placeholder="Ex.: seu@email.com.br">
                 </div>
                 <!--Telefone-->
                 <div class="form-group">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required aria-required="true" placeholder="Ex.: (00) 00000-0000">
-                </div>
-                <!--Assunto-->
-                <div class="form-group">
-                    <label for="assunto">Assunto</label>
-                    <input type="text" id="assunto" name="assunto" required aria-required="true" placeholder="Motivo do contato">
+                    <input type="tel" id="telefone" name="telefone" required aria-required="true"
+                        placeholder="Ex.: (00) 00000-0000">
                 </div>
                 <!--Mensagem-->
                 <div class="form-group">
                     <label for="mensagem">Sua mensagem</label>
-                    <textarea type="text" id="mensagem" name="assunto" required aria-required="true" placeholder="Digite sua mensagem aqui"></textarea>
+                    <textarea type="text" id="mensagem" name="assunto" required aria-required="true"
+                        placeholder="Digite sua mensagem aqui"></textarea>
                 </div>
                 <!--Botão enviar-->
                 <button class="button" type="submit">Quero melhorar minha empresa!</button>
             </form>
         </div>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.344525488345!2d-47.465075099999986!3d-23.520107799999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58ac019b06f69%3A0x4fc3bfc362abc188!2sWaytech%20Solu%C3%A7%C3%B5es%20em%20Tecnologia.!5e0!3m2!1spt-BR!2sbr!4v1747081485722!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </div>
-<script src="/script/formulario.js"></script>
+    <script src="/script/formulario.js"></script>
 </body>
+
 </html>
