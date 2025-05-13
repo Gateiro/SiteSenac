@@ -3,7 +3,7 @@
     --primaria-1: rgba(0, 51, 102, 1);
     --primaria-2: rgba(50, 109, 168, 1);
     --primaria-3: rgba(212, 234, 255, 1);
-    --primaria-4: rgba(242, 39, 56, 1);
+    --primaria-4: rgb(163, 0, 14);
     --branca: rgba(255, 255, 255, 1);
     --branca-2: rgba(255, 255, 255, 0.5);
     --preto: rgba(0, 0, 0, 1);
@@ -70,5 +70,16 @@ body {
     border-radius: 10px;
     border: none;
     margin-right: 50px;
+}
+
+.button{
+    background-color: var(--primaria-4);
+    color: var(--branca);
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
 }
 

@@ -1,0 +1,37 @@
+/* Definição de variáveis globais para cores */
+:root {
+    --primaria-1: rgba(0, 51, 102, 1);
+    --primaria-2: rgba(50, 109, 168, 1);
+    --primaria-3: rgba(212, 234, 255, 1);
+    --primaria-4: rgb(163, 0, 14);
+    --branca: rgba(255, 255, 255, 1);
+    --branca-2: rgba(255, 255, 255, 0.5);
+    --preto: rgba(0, 0, 0, 1);
+}
+
+.footer-content{
+    background-color: var(--primaria-4);
+    color: white;
+    margin-top: 20px;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+footer div div img {
+    width: 130px;
+    height: auto;
+}
+
+.icone{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    list-style: none;
+}
