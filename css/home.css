@@ -13,28 +13,24 @@
 
 
 /* Estilo global do corpo */
-body {
-    background: var(--primaria-1); /* Fundo azul escuro */
-    font-family: sans-serif;      /* Fonte padrão */
+body, html {
+    background: var(--primaria-1);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Margem padrão para a classe principal */
-.main {
-    margin: 5px;
-}
 
 /* Estilo para imagens no banner */
 .bannerCarrossel img {
     width: 100%;              /* Largura total */
-    border-radius: 20px;      /* Bordas arredondadas */
 }
 
-/* CSS */
 .carrossel {
     position: relative;
     width: 100%;
     overflow: hidden;
-    border-radius: 20px;
 }
 
 .bannerCarrossel {
@@ -66,4 +62,26 @@ body {
 
 .buttonCarrossel.next {
     right: 10px;
+}
+
+.container-1{
+    background-color: var(--primaria-2);
+    margin: 0;
+    padding: 20px;
+    color: var(--primaria-3);
+    align-items: center;
+    text-align: center;
+    font-size: x-large ;
+    width: 100%;
+    box-sizing: border-box;
+}
+/*Estilização das cores de texto*/
+.card-1 h2, h3, p{
+    color: var(--primaria-3);
+
+}
+
+.produtos li{
+    list-style: none;
+    color: var(--primaria-3);
 }

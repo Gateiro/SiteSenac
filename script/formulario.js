@@ -5,7 +5,7 @@ document.getElementById('form-contato').addEventListener('submit', function (eve
     const formData = new FormData(document.getElementById('form-contato'));
 
     // Envia os dados via AJAX
-    fetch('processa_formulario.php', {
+    fetch('../formulario/processa_formulario.php', {
         method: 'POST',
         body: formData
     })

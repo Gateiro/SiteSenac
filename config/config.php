@@ -3,8 +3,8 @@
 
 // Configuração do banco de dados
 return [
-    'host' => 'localhost',
-    'dbname' => 'seu_banco',
-    'user' => 'seu_usuario',
-    'password' => 'sua_senha'
+    'host' => '127.0.0.1:3306',
+    'dbname' => 'site_senac',
+    'user' => 'shinjiCalvo',
+    'password' => '!Semgas@123'
 ];

@@ -1,5 +1,12 @@
-/* Arquivo: css/nav-header.css */
-
+:root {
+    --primaria-1: rgba(0, 51, 102, 1);
+    --primaria-2: rgba(50, 109, 168, 1);
+    --primaria-3: rgba(212, 234, 255, 1);
+    --primaria-4: rgb(163, 0, 14);
+    --branca: rgba(255, 255, 255, 1);
+    --branca-2: rgba(255, 255, 255, 0.5);
+    --preto: rgba(0, 0, 0, 1);
+}
 /* Estilo geral do cabeçalho e elementos relacionados */
 header, header .logo-branca-transp a, header nav ul {
     display: flex;
@@ -13,14 +20,23 @@ header .logo-branca-transp img {
 
 /* Estilo geral do cabeçalho */
 header {
+    display: flex;
     justify-content: space-between;
-    border-radius: 20px;
+    align-items: center; /* Alinha os itens verticalmente */
     background-color: var(--primaria-1);
     padding: 5px 50px;
-    align-items: center;
+    margin-bottom: 50px;
 }
 
-header nav ul li{
+header nav ul {
+    display: flex;
+    align-items: center; /* Garante que os itens da lista fiquem alinhados */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
     list-style: none;
     padding: 0 15px;
     align-items: center;
@@ -38,9 +54,8 @@ header nav ul li a{
 /* Efeito hover nos itens da lista */
 header nav ul li:hover {
     color: var(--branca);
-    font-weight: bold;
-    font-size: 19px;
-    text-shadow: 0 0 3px rgba(255, 255, 255, 0.75);
+    font-size: 20px;
+    text-decoration: underline;
     transition: color 300ms ease-in-out, text-shadow 300ms ease-in-out, text-weight 300ms ease-in-out;
 }
 
@@ -56,22 +71,25 @@ header .logo-branca-transp a {
 }
 
 /* Estilo para botões no cabeçalho */
-header nav ul li button.button{
-    background: var(--primaria-4);
+header nav ul li button.button-header {
+    background-color: var(--primaria-4);
     color: var(--branca);
-    padding: 5px 10px;
-    border: none;
+    padding: 10px 20px;
     border-radius: 5px;
-    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
     font-weight: bold;
+    margin: 0; /* Remove margens extras */
+    display: inline-block; /* Garante que o botão se comporte como um item de linha */
+    vertical-align: middle; /* Alinha verticalmente */
 }
 
 /* Estilo para campos de busca e botões no cabeçalho */
-header nav ul li .button:hover {
-    background: var(--primaria-4);
-    color: var(--branca);
+header nav ul li .button-header:hover {
+    background: var(--branca);
+    color: var(--primaria-4);
     border: 1px solid transparent;
     font-weight: bold;
     transition: background 300ms ease-in-out, color 300ms ease-in-out, box-shadow 300ms ease-in-out;
-    box-shadow: 0 0 5px var(--branca-2);
 }
