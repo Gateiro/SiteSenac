@@ -30,7 +30,7 @@ SiteSenac/ ├── css/ # Arquivos de estilo (CSS) │ ├── home.css # Es
 
 O site está publicado no GitHub Pages e pode ser acessado pelo seguinte link:
 
-[https://seu-usuario.github.io/SiteSenac/](https://seu-usuario.github.io/SiteSenac/)
+[https://gateiro.github.io/SiteSenac/](https://gateiro.github.io/SiteSenac/)
 
 ## 🖼️ Prévia do Projeto
 
