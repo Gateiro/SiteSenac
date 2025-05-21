@@ -85,3 +85,31 @@ body, html {
     list-style: none;
     color: var(--primaria-3);
 }
+
+.card-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.content-card-tema{
+    width: 50%;
+    height: 200px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../src/banner2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-card-1{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 200px;
+    background-color: var(--branca);
+    text-align: center;
+    justify-content: center;
+}
+
