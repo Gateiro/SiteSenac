@@ -45,7 +45,7 @@ header nav ul li {
 /* Estilo para os itens da lista de navegação */
 header nav ul li a{
     margin: 20px;
-    color: var(--primaria-3);
+    color: var(--branca);
     transition: 300ms ease-in-out;
     font-weight: bold;
     font-size: 18px;
