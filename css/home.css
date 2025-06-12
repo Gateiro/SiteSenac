@@ -21,49 +21,6 @@ body, html {
     box-sizing: border-box;
 }
 
-
-/* Estilo para imagens no banner */
-.bannerCarrossel img {
-    width: 100%;              /* Largura total */
-}
-
-.carrossel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-
-.bannerCarrossel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
-    min-width: 100%;
-    height: auto;
-}
-
-.buttonCarrossel {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.buttonCarrossel.prev {
-    left: 10px;
-}
-
-.buttonCarrossel.next {
-    right: 10px;
-}
-
 .container-1{
     background-color: var(--primaria-2);
     margin: 0;

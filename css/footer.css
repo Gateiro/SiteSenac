@@ -12,7 +12,7 @@
 .footer-content {
     background-color: var(--primaria-4);
     color: var(--branca);
-    margin-top: 100px;
+    margin-top: 0px;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;

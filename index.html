@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/nav-header.css" />
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Waytech - Home</title>
 </head>
 
@@ -36,17 +39,34 @@
         </nav>
     </header>
     <main class="main">
-        <section class="carrossel">
-            <div class="carrossel">
-                <div class="bannerCarrossel">
+        <div class="carrossel">
+            <div class="bannerCarrossel">
+                <div class="carousel-track">
                     <img src="src/banner1.png" alt="Banner 1" class="carousel-item">
                     <img src="src/banner2.png" alt="Banner 2" class="carousel-item">
                     <img src="src/banner3.png" alt="Banner 3" class="carousel-item">
                 </div>
-                <button class="buttonCarrossel prev" aria-label="Anterior">&#10094;</button>
-                <button class="buttonCarrossel next" aria-label="Próximo">&#10095;</button>
+                <div class="banner-conteudo-group">
+                    <div class="banner-conteudo" data-index="0">
+                        <h1>Mensagem 1</h1>
+                        <p>Texto do banner 1</p>
+                        <a href="#" class="banner-botao">Saiba mais</a>
+                    </div>
+                    <div class="banner-conteudo" data-index="1">
+                        <h1>Mensagem 2</h1>
+                        <p>Texto do banner 2</p>
+                        <a href="#" class="banner-botao">Saiba mais</a>
+                    </div>
+                    <div class="banner-conteudo" data-index="2">
+                        <h1>Mensagem 3</h1>
+                        <p>Texto do banner 3</p>
+                        <a href="#" class="banner-botao">Saiba mais</a>
+                    </div>
+                </div>
             </div>
-        </section>
+            <button class="buttonCarrossel prev" aria-label="Anterior">&#10094;</button>
+            <button class="buttonCarrossel next" aria-label="Próximo">&#10095;</button>
+        </div>
     </main>
     <!--Faixa de apresentação-->
     <div class="container-1">

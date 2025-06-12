@@ -1,16 +1,21 @@
-const track = document.querySelector('.bannerCarrossel');
-const items = Array.from(track.children);
+const track = document.querySelector('.carousel-track');
+const items = Array.from(track.querySelectorAll('.carousel-item'));
 const prevButton = document.querySelector('.buttonCarrossel.prev');
 const nextButton = document.querySelector('.buttonCarrossel.next');
+const conteudos = document.querySelectorAll('.banner-conteudo');
 
 let currentIndex = 0;
 let autoSlideInterval;
 
-// Atualiza a posição do carrossel
 function updateCarousel() {
     const width = items[0].getBoundingClientRect().width;
     track.style.transition = 'transform 0.5s ease-in-out';
     track.style.transform = `translateX(-${currentIndex * width}px)`;
+
+    // Atualiza o conteúdo do banner
+    conteudos.forEach((el, idx) => {
+        el.classList.toggle('active', idx === currentIndex);
+    });
 }
 
 // Avança automaticamente o carrossel

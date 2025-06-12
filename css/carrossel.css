@@ -1,0 +1,121 @@
+.bannerCarrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-conteudo {
+    display: none;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.6);
+    color: var(--branca);
+    text-align: left;            /* Alinha o texto à esquerda */
+    align-items: flex-start;     /* Alinha os itens ao início (esquerda) */
+    padding-left: 70px;          /* Espaço da borda esquerda, ajuste conforme necessário */       /* Opcional, para não colar na borda direita */
+    padding-top: 300px;
+    flex-direction: column;
+}
+
+.banner-conteudo h1 {
+    margin: 0 0 12px 0;
+    font-size: 3rem;
+    color: var(--branca);
+    text-shadow: 2px 2px 8px var(--primaria-1);
+}
+
+.banner-conteudo p {
+    margin: 0 0 18px 0;
+    font-size: 1.2rem;
+    color: var(--branca);
+}
+
+.banner-botao {
+    background: var(--primaria-4);
+    color: var(--branca);
+    padding: 10px 28px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background 0.2s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.banner-botao:hover {
+    background: var(--branca);
+    color: var(--primaria-4);
+    transition: background 300ms ease-in-out, color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+/* Estilo para imagens no banner */
+.bannerCarrossel img {
+    width: 100%;
+    height: 600px;  
+    object-fit: cover;            /* Largura total */
+}
+
+.banner-conteudo.active {
+    display: flex;
+}
+.banner-conteudo-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 2;
+}
+.banner-conteudo.active {
+    pointer-events: auto; 
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.bannerCarrossel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttonCarrossel {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.buttonCarrossel.prev {
+    left: 10px;
+}
+
+.buttonCarrossel.next {
+    right: 10px;
+}
