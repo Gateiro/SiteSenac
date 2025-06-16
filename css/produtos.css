@@ -1,0 +1,103 @@
+/* css/produtos.css */
+
+/* Estilos gerais para o corpo das páginas de produtos */
+.body-produto {
+    background-color: var(--primaria-3); /* Um fundo mais claro para as páginas de produto */
+    color: var(--preto);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container principal para o conteúdo de cada produto */
+.main-produto-container {
+    max-width: 960px; /* Largura máxima para o conteúdo central */
+    margin: 40px auto; /* Centraliza o container na página */
+    padding: 30px;
+    background-color: var(--branca);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaço entre os elementos internos */
+}
+
+/* Título do produto */
+.main-produto-container h1 {
+    color: var(--primaria-1);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Imagem do produto */
+.produto-imagem {
+    width: 100%;
+    max-height: 400px;
+    object-fit: contain; /* Garante que a imagem não se distorça */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Descrição e seções de texto do produto */
+.produto-descricao,
+.produto-caracteristicas {
+    color: var(--preto);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.produto-caracteristicas h2 {
+    color: var(--primaria-2);
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.produto-caracteristicas ul {
+    list-style: disc; /* Bolinhas para listas */
+    margin-left: 20px;
+    padding: 0;
+}
+
+.produto-caracteristicas li {
+    margin-bottom: 8px;
+}
+
+/* Botão de chamada para ação na página do produto */
+.produto-cta-button {
+    display: inline-block;
+    background-color: var(--primaria-4);
+    color: var(--branca);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Centraliza o botão no flex container */
+    margin-top: 20px;
+}
+
+.produto-cta-button:hover {
+    background-color: var(--primaria-1);
+}
+
+/* Adicione aqui media queries para responsividade se necessário */
+@media (max-width: 768px) {
+    .main-produto-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .main-produto-container h1 {
+        font-size: 2rem;
+    }
+
+    .produto-caracteristicas h2 {
+        font-size: 1.5rem;
+    }
+}
