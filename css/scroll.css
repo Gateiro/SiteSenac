@@ -4,7 +4,7 @@
 .hidden {
     opacity: 0; /* Começa completamente invisível */
     transform: translateY(50px); /* Começa 50px abaixo da posição final */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transição suave de 0.8 segundos */
+    transition: opacity 0.9s ease-out, transform 0.9s ease-out; /* Transição suave de 0.8 segundos */
 }
 
 /* Estilo quando o elemento é visível e animado */
@@ -13,10 +13,3 @@
     transform: translateY(0); /* Move para a posição final original */
 }
 
-/* Regras específicas para os cards de produto (.card-2) para um efeito escalonado */
-/* Garante que a transição e o estado inicial sejam definidos para cada card */
-.produtos .card-2 {
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transição individual para cada card */
-    opacity: 0;
-    transform: translateY(30px); /* Começa 30px abaixo */
-}

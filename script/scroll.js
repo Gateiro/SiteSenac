@@ -19,10 +19,8 @@ function setupScrollReveal() {
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Se o elemento está visível no viewport
-                entry.target.classList.add('show'); // Adiciona a classe 'show' para disparar a animação
-
                 // Lógica para o efeito escalonado nos cards de produto (.card-2)
+                // É CRUCIAL que o transitionDelay seja aplicado ANTES da classe 'show'
                 if (entry.target.classList.contains('card-2')) {
                     const productList = entry.target.closest('.produtos ul');
                     if (productList) {
@@ -35,6 +33,9 @@ function setupScrollReveal() {
                         }
                     }
                 }
+                
+                // Adiciona a classe 'show' para disparar a animação (após o delay, se aplicável)
+                entry.target.classList.add('show'); 
                 
                 // Parar de observar o elemento, pois já foi animado
                 observer.unobserve(entry.target);
