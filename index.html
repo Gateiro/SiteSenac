@@ -12,18 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/scroll.css"> 
     <title>Waytech - Home</title>
 </head>
 
 <body>
     <header>
-        <!-- Logo com link para a página inicial -->
         <span class="logo-branca-transp">
             <a href="../index.html">
                 <img src="src/logo-branca-transp.png" alt="Logo da Waytech">
             </a>
         </span>
-        <!-- Menu de navegação -->
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
@@ -68,14 +67,11 @@
             <button class="buttonCarrossel next" aria-label="Próximo">&#10095;</button>
         </div>
     </main>
-    <!--Faixa de apresentação-->
-    <div class="container-1">
+    <div class="container-1 hidden">
         <h2>Sua infraestrutura de TI está preparada para os desafios futuros?</h2>
     </div>
-    <!--Container para inserir os cards-->
     <section class="container-2">
-        <!--Div para organizar 1º card-->
-        <div class="card-1">
+        <div class="card-1 hidden">
             <div class="content-card-tema">
                 <img src="src/icon-lamp.png" alt="lamp-icon">
                 <h2>Desenhamos sua solução</h2>
@@ -87,8 +83,7 @@
                     quibusdam dicta quos aperiam unde ut?</p>
             </div>
         </div>
-        <!--Div para organizar 1º card-->
-        <div class="card-1">
+        <div class="card-1 hidden">
             <div class="content-card-1">
                 <h3>O primeiro passo é entender seu negócio</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo distinctio expedita consequuntur!
@@ -101,22 +96,22 @@
             </div>
         </div>
     </section>
-    <section class="produtos">
+    <section class="produtos hidden">
         <h2>Nossos principais produtos</h2>
         <ul>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-solid fa-desktop"></i>
                     <h3>Monitoramento 24x7</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
                         dignissimos expedita accusamus nihil magni. Distinctio, in?</p>
-                    <a href="produtos/monitoramento-24x7.html">
+                    <a href="#">
                         <button>Saiba mais</button>
                     </a>
                 </div>
             </li>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-solid fa-cloud"></i>
                     <h3>Computação em nuvem</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
@@ -127,7 +122,7 @@
                 </div>
             </li>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-solid fa-database"></i>
                     <h3>Banco de dados</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
@@ -138,7 +133,7 @@
                 </div>
             </li>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-solid fa-headset"></i>
                     <h3>Centro de comando</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
@@ -149,7 +144,7 @@
                 </div>
             </li>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-solid fa-house-fire"></i>
                     <h3>Firewall</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
@@ -157,10 +152,9 @@
                     <a href="#">
                         <button>Saiba mais</button>
                     </a>
-                </div>
-            </li>
+                </li>
             <li>
-                <div class="card-2">
+                <div class="card-2 hidden">
                     <i class="fa-brands fa-microsoft"></i>
                     <h3>Microsoft 365</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, quos dolorem tempore
@@ -172,7 +166,7 @@
             </li>
         </ul>
     </section>
-    <div class="container-3">
+    <div class="container-3 hidden">
         <h3>Consulte nossos especialistas</h3>
         <p>Garanta a solução ideal para o seu negócio, venha para a Waytech!</p>
         <a href="../SiteSenac/formulario/formulario.html">
@@ -181,14 +175,12 @@
     </div>
     <footer>
         <div class="footer-content">
-            <!-- Logo e descrição -->
             <div class="footer-logo">
                 <img src="src/logo-branca-transp.png" alt="Logo da Waytech">
                 <p>Waytech - Soluções em Tecnologia</p>
                 <p>Todos os direitos reservados &copy; 2023</p>
             </div>
 
-            <!-- Links úteis -->
             <div class="footer-links">
                 <h3>Links úteis</h3>
                 <ul>
@@ -200,7 +192,6 @@
                 </ul>
             </div>
 
-            <!-- Dados de contato -->
             <div class="footer-contact">
                 <h3>Contato</h3>
                 <p>Telefone: (11) 1234-5678</p>
@@ -223,5 +214,4 @@
     </footer>
 </body>
 <script src="script/app.js" defer></script>
-
-</html>
+<script src="script/scroll.js" defer></script> </html>
