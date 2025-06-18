@@ -6,7 +6,11 @@
     <link rel="icon" href="../src/logo-branca-transp.png" />
     <link rel="stylesheet" href="../css/nav-header.css" />
     <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/produtos.css" /> 
+    <link rel="stylesheet" href="../css/produtos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/scroll.css">  
     <title>Waytech - Monitoramento 24x7</title>
 </head>
 <body class="body-produto">
@@ -30,8 +34,8 @@
         </nav>
     </header>
 
-    <main class="main-produto-container">
-        <h1>Monitoramento 24x7</h1>
+    <main class="main-produto-container hidden">
+        <h1 class="hidden">Monitoramento 24x7</h1>
         <img src="../src/produto-monitoramento.png" alt="Imagem do Produto Monitoramento 24x7" class="produto-imagem">
 
         <p class="produto-descricao">
@@ -40,7 +44,7 @@
             e agindo proativamente sobre qualquer anomalia antes que ela se torne um problema.
         </p>
 
-        <div class="produto-caracteristicas">
+        <div class="produto-caracteristicas hidden">
             <h2>Principais Benefícios:</h2>
             <ul>
                 <li>**Disponibilidade Contínua:** Minimizamos o tempo de inatividade com detecção e resolução rápidas.</li>
@@ -51,7 +55,7 @@
             </ul>
         </div>
 
-        <div class="produto-caracteristicas">
+        <div class="produto-caracteristicas hidden">
             <h2>Recursos Incluídos:</h2>
             <ul>
                 <li>Monitoramento de servidores (físicos e virtuais).</li>
@@ -63,7 +67,7 @@
             </ul>
         </div>
 
-        <a href="../formulario/formulario.html" class="produto-cta-button">Fale com um Especialista!</a>
+        <a href="../formulario/formulario.html" class="produto-cta-button hidden">Fale com um Especialista!</a>
     </main>
 
     <footer>
@@ -103,4 +107,5 @@
         </div>
     </footer>
 </body>
+<script src="script/scroll.js"></script>
 </html>
