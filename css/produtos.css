@@ -29,13 +29,15 @@
 .main-produto-container {
     max-width: 960px; /* Largura máxima para o conteúdo central */
     margin: 40px auto; /* Centraliza o container na página */
-    padding: 30px;
     background-color: var(--branca);
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 20px; /* Espaço entre os elementos internos */
+}
+
+.main-produto-container ul li{
+    list-style: none;
 }
 
 /* Título do produto */
@@ -43,7 +45,6 @@
     color: var(--branca);
     font-size: 2.5rem;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .container-imagem-produto{
@@ -61,7 +62,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-bottom: 24px;
     z-index: 1;
     overflow: hidden;
 }
@@ -70,7 +70,6 @@
     color: var(--branca);
     font-size: 2.6rem;
     font-weight: 700;
-    margin: 0 0 12px 0;
     text-shadow: 2px 4px 16px rgba(0,0,0,0.18);
     letter-spacing: 1px;
 }
@@ -78,7 +77,6 @@
 .produto-banner-titulo .produto-descricao {
     color: var(--branca);
     font-size: 1.18rem;
-    margin: 0 0 8px 0;
     line-height: 1.6;
     text-shadow: 1px 2px 8px rgba(0,0,0,0.10);
     padding: 0;
@@ -96,23 +94,17 @@
     color: var(--preto);
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-top: 200px;
+    padding: 36px 32px 0px 40px;
+    
 }
 .produto-caracteristicas h2 {
     color: var(--primaria-2);
     font-size: 1.8rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
 }
 
 .produto-caracteristicas ul {
     list-style: disc; /* Bolinhas para listas */
-    margin-left: 20px;
     padding: 0;
-}
-
-.produto-caracteristicas li {
-    margin-bottom: 8px;
 }
 
 /* Botão de chamada para ação na página do produto */
@@ -129,7 +121,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
     align-self: center; /* Centraliza o botão no flex container */
-    margin-top: 20px;
+    margin: 40px 0px 40px 0px;
 }
 
 .produto-cta-button:hover {
