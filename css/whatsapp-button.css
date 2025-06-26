@@ -1,0 +1,81 @@
+/*Botão Whatsapp - Estilos*/
+
+:root {
+    --primaria-1: rgba(0, 51, 102, 1);
+    --branca: rgba(255, 255, 255, 1);
+    --whatsapp-verde: #25D366; /* Cor oficial do WhatsApp */
+    --whatsapp-verde-hover: #1DA851; /* Tom um pouco mais escuro para hover */
+}
+
+.whatsapp-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: var(--whatsapp-verde);
+    color: var(--branca);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-button:hover{
+    background-color: var(--whatsapp-verde-hover);
+    transform: translateY(-3px);
+}
+
+.whatsapp-button .whatsapp-text{
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--whatsapp-verde-hover);
+    color: var(--branca);
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 28px 8px 8px;
+    position: absolute;
+    z-index: 1001;
+    bottom: 50%;
+    right: 100%;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+    transform: translateY(50%);
+    white-space: nowrap;
+    font-size: 14px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.whatsapp-button .whatsapp-text::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--whatsapp-verde-hover);
+}
+
+.whatsapp-button:hover .whatsapp-text{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(50%);
+}
+
+@media (max-width: 768px){
+    .whatsapp-button{
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+

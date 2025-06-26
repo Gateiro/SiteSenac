@@ -107,6 +107,38 @@
     padding: 0;
 }
 
+ul.produto-tecnologias{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; /* ou center para centralizar */
+    align-items: center;
+    gap: 32px; /* Espaço entre as imagens */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+}
+
+.produto-tecnologias li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-tecnologias img {
+    width: 120px;      /* Tamanho padrão das logos */
+    max-width: 100%;   /* Garante responsividade */
+    height: auto;
+    filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+    transition: transform 0.2s;
+}
+
+.produto-tecnologias img:hover {
+    transform: scale(1.08);
+    filter: drop-shadow(0 4px 16px rgba(0,0,0,0.18));
+}
+
 /* Botão de chamada para ação na página do produto */
 .produto-cta-button {
     display: inline-block;
